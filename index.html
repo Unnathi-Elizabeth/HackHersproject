@@ -12,7 +12,7 @@
     body{
         margin: 0;
         padding: 0;
-        background: url('https://www.youthhelpingtrust.org/wp-content/uploads/2019/08/oldage.jpg');
+        background: url('oldage.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -93,23 +93,45 @@
             font-size: 25px;
 
         }
+        
 </style>
 <body>
     <header class="HEADER">
         <!--left box for logo-->
         <div class="left">
-            <!--<img src="https://w1.pngwing.com/pngs/335/416/png-transparent-holding-heart-handshake-symbol-hand-heart-icon-design-gesture-holding-hands-black-and-white.png"> </img>-->
             <div>SAHAAYAK</div>
 
             <!--right box for buttons-->
             <div class="right">
                 <ul class="navbar">
-                    <li><a href="#">About Us </a></li>
+                    <li><a href="#">Notification </a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Services</a>
+                        <label for="Services">Choose Services</label>
+                        <select value ="choose" onChange="window.location.href=this.value" name="Services" id="Services">
+                          <optgroup label="Bill">
+                            <option value=""></option>
+                            <option value="https://wss.kseb.in/selfservices">Electricity</option>
+                            
+                            
+                            <option value="https://epay.kwa.kerala.gov.in/quickpay">Water</option>
+                            <option value=""></option>
+                          </optgroup>
+                          <optgroup label="Health">
+                            <option value=""></option>
+                            <option value="https://instanthealthindia.wordpress.com/calendar/">Calender</option>
+                            <option value="Appointment">Appointment</option>
+                            <option value=""></option>
+                          </optgroup>
+                          <optgroup label="Location">
+                            <option value=""></option>
+                            <option value="https://www.google.com/maps/@9.5162028,76.5603715,15z">Share Location</option>
+                            <option value="Live Location">Live Location</option>
+                          </optgroup>
+                        </select>
                     </li>
                     <li><a href="login.html">login</a></li>
-                    <li><a href="#">Sign Out</a></li>
+                    <li><a href="index.html">Sign Out</a></li>
                 </ul>
 
             </div>

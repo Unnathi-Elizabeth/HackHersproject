@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAHAAYAK</title>
+    <script>
+        function Register(){
+            window.open("http://127.0.0.1:5500/Register.html");
+        }
+    </script>
 </head>
 <link rel="stylesheet" href="css/style.css">
 <style>
@@ -12,7 +17,7 @@
     body{
         margin: 0;
         padding: 0;
-        background: url('https://www.youthhelpingtrust.org/wp-content/uploads/2019/08/oldage.jpg');
+        background: url('oldage.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -98,7 +103,7 @@
             top: 200px;
             translate: (-50%,-50%);
             width: 550px;
-            height: 300px;
+            height: 350px;
             background: white;
             padding-top: 200px;
         }
@@ -128,55 +133,55 @@
         .Rectangle h4{
             color: black;
             position: absolute;
-width: 337px;
-height: 28px;
-left: 110px;
-top: 350px;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
+            width: 337px;
+            height: 28px;
+            left: 110px;
+            top: 340px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
         }
         .Rectangle h2{
             color: red;
             position: absolute;
-width: 337px;
-height: 28px;
-left: 250px;
-top: 388px;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
+            width: 337px;
+            height: 28px;
+            left: 250px;
+            top: 388px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
         }
         .Rectangle p{
             color: black;
             position: absolute;
-width: 246px;
-height: 68px;
-left: 150px;
-top: 5px;
-font-weight: 400;
-font-size: 45px;
-line-height: 53px;
-text-align: center;
+            width: 246px;
+            height: 68px;
+            left: 150px;
+            top: 5px;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 53px;
+            text-align: center;
 
         }
         .Rectangle p1{
             position: absolute;
-width: 359px;
-height: 28px;
-left: 95px;
-top: 100px;
+            width: 359px;
+            height: 28px;
+            left: 95px;
+            top: 100px;
 
-font-family: 'ABeeZee';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
+            font-family: 'ABeeZee';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
 
-color: #000000;
+            color: #000000;
         }
         .Rectangle h2 a:hover,.Rectangle h2 a.active{
         text-decoration: underline;
@@ -188,17 +193,17 @@ color: #000000;
             margin: 20px auto;
             height: 40px;
             color: black;
-            margin-top: 15%;
-        }
-        .Rectangle button1{
-            display: block;
+            margin-top: 10%;
+            padding: 10px;
+        } 
+        .Rectangle p2{
             color: red;
+            font-size: 20px;
             position: absolute;
-width: 337px;
-height: 28px;
-left: 400px;
-top: 380px;
-font-size: 20px;
+            width: 337px;
+            height: 28px;
+            left: 400px;
+            top: 365px;
         }
         
 
@@ -213,10 +218,26 @@ font-size: 20px;
             <!--right box for buttons-->
             <div class="right">
                 <ul class="navbar">
-                    <li><a href="#">About Us </a></li>
+                    <li><a href="#">Notification </a></li>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">login</a></li>
+                    <li><a href="#">Services</a>
+                        <label for="Services">Choose Services</label>
+                        <select name="Services" id="Services">
+                          <optgroup label="Bill">
+                            <option value="Electricity">Electricity</option>
+                            <option value="Water">Water</option>
+                          </optgroup>
+                          <optgroup label="Health">
+                            <option value="Health Calender">Calender</option>
+                            <option value="Appointment">Appointment</option>
+                          </optgroup>
+                          <optgroup label="Location">
+                            <option value="Share Location">Share Location</option>
+                            <option value="Live Location">Live Location</option>
+                          </optgroup>
+                        </select>
+                    </li>
+                    <li><a href="login.html">login</a></li>
                     <li><a href="#">Sign Out</a></li>
                 </ul>
 
@@ -224,10 +245,10 @@ font-size: 20px;
             <div class="Rectangle">
                 <input type="text" name="" placeholder="Phone Number Or Email">
                     <input type="text" name="" placeholder="Password Or OTP">
-                    <h3>forgot password?</h3>
+                    <a href="verification.html"><h3>forgot password?</h3></a>
                     <h4>Didn't have an account ?</h4>
-                    <button1>Register</button1>
                     <p>WELCOME</p>
+                    <a href="Register.html"><p2>Register</p2></a>
                     <p1>Login to your account</p1>
                     <button class="btn">Submit</button>
                 </div>
