@@ -42,3 +42,5 @@
 
 ## FLOWCHART OF THE WEBSITE:
 https://www.canva.com/design/DAFVFfj9ggQ/ACyuVYg6ZAZ2hcvByRUwjA/view?utm_content=DAFVFfj9ggQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+## video of working of website
+https://www.loom.com/share/7107e99f0bcd412198c1a1e021b74972
